@@ -108,5 +108,15 @@ const ELEMENTS = [
             "www.youtube.com##ytd-rich-item-renderer:has(a[href*=\"list=\"])",
             "www.youtube.com##ytd-grid-video-renderer:has(a[href*=\"list=\"])"
         ]
+    },
+    {
+        id: "main_page_shorts",
+        label: "Main Page Shorts Block",
+        filters: [
+            "www.youtube.com##ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope"
+        ],
+        matchers: [
+            "www.youtube.com##ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope"
+        ]
     }
 ];
