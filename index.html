@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- todo; add github button, help(question mark) next to delete & update button -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HollowTube</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./elements.js"></script>
+  <script src="./app.js"></script>
+</head>
+
+<body>
+  <main>
+    <h1>HollowTube</h1>
+    <div id="createView" class="view-container">
+      <ul class="block-list" id="blockList">
+      </ul>
+    </div>
+    <div id="deleteUpdateView" class="view-container" style="display: none;">
+      <textarea id="deleteUpdateInput" class="filter-input"
+        placeholder="Paste your current filters here to Delete & Update..." rows="6"></textarea>
+      <ul class="block-list" id="deleteUpdateList">
+      </ul>
+    </div>
+  </main>
+
+  <div class="output-overlay" id="outputOverlay"></div>
+  <section class="output" id="outputPanel">
+    <div class="action-circles">
+      <button class="circle-btn is-active" id="navCreate" type="button" aria-label="Create View">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="none" d="M12 5v14m-7-7h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </button>
+      <button class="circle-btn theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme">
+        <span class="theme-icon" id="themeIcon" aria-hidden="true"></span>
+      </button>
+      <button class="circle-btn" id="navDeleteUpdate" type="button" aria-label="Delete & Update">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6" />
+        </svg>
+      </button>
+    </div>
+    <button class="copy-button" id="copyButton" type="button" aria-label="Copy final text">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path
+          d="M16 1H6a2 2 0 0 0-2 2v12h2V3h10zm3 4H10a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m0 16H10V7h9z" />
+      </svg>
+    </button>
+
+    <textarea id="finalText" readonly></textarea>
+  </section>
+
+</body>
+
+</html>
