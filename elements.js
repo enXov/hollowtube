@@ -118,5 +118,15 @@ const ELEMENTS = [
         matchers: [
             "www.youtube.com##ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope"
         ]
+    },
+    {
+        id: "hide_members_only",
+        label: "Hide Members Only Videos",
+        filters: [
+            "youtube.com##ytd-rich-item-renderer:has(badge-shape.yt-badge-shape--commerce)"
+        ],
+        matchers: [
+            "youtube.com##ytd-rich-item-renderer:has(badge-shape.yt-badge-shape--commerce)"
+        ]
     }
 ];
